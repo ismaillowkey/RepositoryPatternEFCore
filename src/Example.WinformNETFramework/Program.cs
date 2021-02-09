@@ -7,9 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Example.WinformNETFramework
@@ -29,27 +26,27 @@ namespace Example.WinformNETFramework
                .ConfigureServices((hostContext, services) =>
                {
                    services.AddScoped<Form1>();
-                  // -- Using File Configuration appsetting.json
-                  // "ConnectionStrings": {
-                  //    "DefaultConnection": "Data Source=dbexample.db"
-                  //  }
-                  //
+                   // -- Using File Configuration appsetting.json
+                   // "ConnectionStrings": {
+                   //    "DefaultConnection": "Data Source=dbexample.db"
+                   //  }
+                   //
 
-                  //services.AddDbContext<ApplicationContext>(options =>
-                  //options.UseSqlite(
-                  //    Configuration.GetConnectionString("DefaultConnection"),
-                  //    b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
-                  //
-                  // Or
-                  services.AddDbContext<ApplicationDbContext>(options =>
-                      options.UseSqlite("Data Source=dbexample.db"));
+                   //services.AddDbContext<ApplicationContext>(options =>
+                   //options.UseSqlite(
+                   //    Configuration.GetConnectionString("DefaultConnection"),
+                   //    b => b.MigrationsAssembly(typeof(ApplicationContext).Assembly.FullName)));
+                   //
+                   // Or
+                   services.AddDbContext<ApplicationDbContext>(options =>
+                       options.UseSqlite("Data Source=dbexample.db"));
 
-                  #region Repositories
-                  services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+                   #region Repositories
+                   services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
                    services.AddTransient<IDeveloperRepository, DeveloperRepository>();
                    services.AddTransient<IProjectRepository, ProjectRepository>();
-                  #endregion
-                  services.AddTransient<IUnitOfWork, UnitOfWork>();
+                   #endregion
+                   services.AddTransient<IUnitOfWork, UnitOfWork>();
                });
 
             var host = builder.Build();

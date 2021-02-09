@@ -1,15 +1,7 @@
 ﻿using Example.Persistence.Contexts;
-using Example.Persistence.Repositories.DeveloperRepository;
 using Example.Persistence.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Example.WinformNET5

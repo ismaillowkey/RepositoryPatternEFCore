@@ -1,17 +1,12 @@
 using Example.Persistence.Contexts;
 using Example.Persistence.GenericRepository;
-using Example.Persistence.Repositories;
 using Example.Persistence.Repositories.DeveloperRepository;
 using Example.Persistence.Repositories.ProjectRepository;
 using Example.Persistence.UnitOfWork;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Example.WinformNET5
