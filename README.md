@@ -1,6 +1,7 @@
 # Readme
 
-This Application implement Unit of work and Repository pattern
+This Application implement Unit of work, Repository pattern and Entity Framework Core 3.1\
+Example with and without dependency injection
 
 ## Installation
 ```bash

@@ -13,4 +13,10 @@
     <ProjectReference Include="..\Example.Persistence\Example.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="dbexample.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
