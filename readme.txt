@@ -21,8 +21,4 @@ dotnet ef --startup-project ../dummy/ database update
 // Copy file "dbexample.db" from project "dummy" to your Project Winform Net Framework->bin->debug
 // delete project "dummy"
 
-winform using simpleinjector
-https://simpleinjector.readthedocs.io/en/latest/windowsformsintegration.html
-https://simpleinjector.readthedocs.io/en/latest/advanced.html
-
 source : https://codewithmukesh.com/blog/repository-pattern-in-aspnet-core/
